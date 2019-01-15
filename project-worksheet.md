@@ -23,13 +23,13 @@ Homer is an app that will allow a user to build their own customized home with f
 THe user can search for an item and decide whether or not they want that item in their home. This is great for interior designers and people who want to have a visual representation of all the things that they want to add to their new or current home all in one place.
 
 ## Wireframes
-
+https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534467/IMG_4070.jpg
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
-
+https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534474/IMG_4078.jpg
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
@@ -37,18 +37,19 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### SAMPLE.....
 #### MVP 
 
-- Learn how to use furniture api 
-- Implement up search function
+- Get data from furniture api 
+- Create work space area (where favorites will be rendered) 
+- Implement search function
 - Implement favoriting function
 
 #### PostMVP 
-
-- Add data to favorites section
+- Display search results
+- Create a similar page for making outfits
 
 ## React Architectural Design
 Workspace/Search/Search Results
 Define the the React components and the architectural design of your app.
-
+https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534481/IMG_4081.jpg
 #### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
 
 ## Functional Components
