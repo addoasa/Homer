@@ -1,7 +1,7 @@
 # Project Overview
 
 ****************API-LINK*************** 
-https://3d.io/docs/api/2/furniture.html
+https://pixabay.com/api/docs/
 ***************************************
 
 ## Project Schedule
@@ -20,11 +20,13 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Homer is an app that will allow a user to build their own customized home with furniture that can be accessed from an API.
-THe user can search for an item and decide whether or not they want that item in their home. This is great for interior designers and people who want to have a visual representation of all the things that they want to add to their new or current home all in one place.
+Homer is an app that will allow a user to build their own customized moodboard with images that can be accessed from an API.
+The user can search for an item and decide whether or not they want that item in their mood board. This is great for interior designers and people who want to have a visual representation of all the things that they want to see in one place.
 
 ## Wireframes
+
 https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534467/IMG_4070.jpg
+https://res.cloudinary.com/ddz7dotz5/image/upload/v1547584611/image_from_ios.jpg
 
 1) In the first wire frame users will type into the search input field which will render furniture items by name.
 	Search results will accumulate below the search bar.
@@ -41,31 +43,24 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### SAMPLE.....
 #### MVP 
 
-- Get data from furniture api 
+- Fetch data from api 
 - Create work space area (where favorites will be rendered) 
 - Implement search function
 - Implement favoriting function
 
 #### PostMVP 
-- Allow users to log in and have the favorites saved
 
 
 ## React Architectural Design
 
 https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534481/IMG_4081.jpg
+https://res.cloudinary.com/ddz7dotz5/image/upload/v1547584671/image_from_ios2.jpg
 
 ## Functional Components
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-#### SAMPLE.....
-| Component | Description | 
-| --- | :---: |  
-| Workspace | This will render the favorited furniture items | 
-| Footer | This will render the header include the nav | 
-
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 #### SAMPLE.....
 | Component | Priority | Estimated Time | Actual Time |
