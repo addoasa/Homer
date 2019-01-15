@@ -19,7 +19,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Homer is an app that will allow a user to build their own customized home with furniture that can be accessed from an API.
+THe user can search for an item and decide whether or not they want that item in their home. This is great for interior designers and people who want to have a visual representation of all the things that they want to add to their new or current home all in one place.
 
 ## Wireframes
 
