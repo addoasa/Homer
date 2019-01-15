@@ -24,12 +24,15 @@ THe user can search for an item and decide whether or not they want that item in
 
 ## Wireframes
 https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534467/IMG_4070.jpg
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+
+1) In the first wire frame users will type into the search input field which will render furniture items by name.
+	Search results will accumulate below the search bar.
+2) In the second Wireframe users can click the icon on a search result. That search resutlt will then populate the top of the 	     webpage forming a moodboard of furniture.
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
 https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534474/IMG_4078.jpg
+
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
@@ -43,14 +46,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Implement favoriting function
 
 #### PostMVP 
-- Display search results
-- Create a similar page for making outfits
+- Allow users to log in and have the favorites saved
+
 
 ## React Architectural Design
-Workspace/Search/Search Results
-Define the the React components and the architectural design of your app.
+
 https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534481/IMG_4081.jpg
-#### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
 
 ## Functional Components
 
@@ -68,9 +69,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### SAMPLE.....
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs |
-| Total | H | 6hrs| 5hrs | 
+| Fetch from Api | H | 3hrs| 0hrs |
+| Render Search Results Component based on API filter | H | 4hrs| 0hrs |
+| Create an onClick system(likely pushing into an array)for Favorites moodboard | H | 3hrs| 0hrs |
+| Render favorites moodboard | H | 2hrs| 0hrs |
+
+
+| Total | H | 12hrs| 0hrs | 
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
