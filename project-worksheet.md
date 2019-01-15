@@ -8,7 +8,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
+|Day 1| Project Description | Complete
 |Day 2| Wireframes / Priority Matrix / Functional Components | Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| Pseudocode / actual code | Incomplete
@@ -37,15 +37,16 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### SAMPLE.....
 #### MVP 
 
-- Find and use external api 
-- Render data on page in a list
+- Learn how to use furniture api 
+- Implement up search function
+- Implement favoriting function
 
 #### PostMVP 
 
 - Add data to favorites section
 
 ## React Architectural Design
-
+Workspace/Search/Search Results
 Define the the React components and the architectural design of your app.
 
 #### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
@@ -57,7 +58,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 #### SAMPLE.....
 | Component | Description | 
 | --- | :---: |  
-| Header | This will render the header include the nav | 
+| Workspace | This will render the favorited furniture items | 
 | Footer | This will render the header include the nav | 
 
 
