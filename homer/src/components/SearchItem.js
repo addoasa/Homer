@@ -14,7 +14,7 @@ function SearchItem(props) {
     
         return(
             <div>
-                <div>{photos}</div>
+                <div>{ photos||"loading" }</div>
             </div>
         )
     

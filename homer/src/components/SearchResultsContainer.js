@@ -3,7 +3,7 @@ import axios from 'axios';
 import SearchItem from './SearchItem';
 
 
-const PICURL = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&per_page=20&image_type=photo"
+const PICURL = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&page=1&per_page=200&image_type=photo"
 const apiKey="11292145-329b7f2b3c7df7ca1ca24508a"
 
 
@@ -14,12 +14,12 @@ class SearchResultsContainer extends Component{
         this.state={
             gotPics: [],
             filteredPics:null ,
-            loading:'loading',
             favImages:[]
         }
         this.getPics = this.getPics.bind(this);
         this.changeHandler = this.changeHandler.bind(this);
         this.clickHandler = this.clickHandler.bind(this);
+        this.clearBoard = this.clearBoard.bind(this);
     }
 
     async getPics(){
@@ -37,8 +37,9 @@ class SearchResultsContainer extends Component{
     
     clickHandler(event){
         const clickedImg = event.target.src
+        const clickedImgKey = event.target.key
         // this.setState({ favImages:<img src={clickedImg}/>})
-        this.state.favImages.push(<img src={clickedImg}/>)
+        this.state.favImages.push(<img key ={clickedImgKey} src={clickedImg}/>)
         this.forceUpdate()
         console.log(this.state.favImages)
 
@@ -57,15 +58,18 @@ class SearchResultsContainer extends Component{
         this.setState({filteredPics:imagesToDisplay})
     }      
 
+      clearBoard(){
+          this.setState({favImages:[]})
+      }
 
     render(){
         return(
             <div>  
                 <div>{this.state.favImages}</div>
-                <form>
+                
                     <input onChange ={this.changeHandler} type="text"></input>
-                    <input type="submit"></input>
-                </form>
+                    <button onClick={this.clearBoard}>Clear</button>
+                
                  <SearchItem passClick={this.clickHandler} fetchedPictures={this.state.filteredPics || this.state.gotPics }/>
             </div>
         )
