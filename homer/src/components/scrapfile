@@ -1,0 +1,41 @@
+*********** console.log(this.state.gotPics)
+this will list all of the images
+
+*********** console.log(this.state.gotPics[0].tags)        
+this lets me see the tags of the first listed image
+***************
+
+
+
+I need to check if the original displayed array of images
+contains a specific tag
+
+the tag must be entered into the box
+
+when typed browser must check condition of whether or not
+the typed value matches any of the array tags
+
+for(let i = 0; i<this.state.gotPics.length;i++){
+    if(this.state.gotPics[i].tags.includes(event.target.value){
+        
+    }
+}
+
+function change(event){
+this.state.gotPics.map((photo,index)=>{
+!this.state.gotPics.tags.includes(event.target.value) ? <img key={key} src={photo.largeImageURL} : <ReactFragment/>
+}
+)
+}       
+    
+    set the state of got pics to show a picture 
+    gotPics.tags
+
+
+
+
+// [1, 2, 3].includes(2);     // true
+// [1, 2, 3].includes(4);     // false
+// [1, 2, 3].includes(1, 2);  // true
+// [1, 2, 3].includes(3, 4);  // false
+// [1, 2, 3].includes(3, 3);  // false

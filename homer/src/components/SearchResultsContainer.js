@@ -3,7 +3,7 @@ import axios from 'axios';
 import SearchItem from './SearchItem';
 
 
-const PICURL = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&per_page=30&image_type=photo"
+const PICURL = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&per_page=200&image_type=photo"
 const apiKey="11292145-329b7f2b3c7df7ca1ca24508a"
 
 
@@ -12,34 +12,60 @@ class SearchResultsContainer extends Component{
         super(props)
         
         this.state={
-            gotPics: []
+            gotPics: [],
+            filteredPics:null ,
+            loading:'loading',
+            favImages:''
         }
         this.getPics = this.getPics.bind(this);
         this.changeHandler = this.changeHandler.bind(this);
+        this.clickHandler = this.clickHandler.bind(this);
     }
 
     async getPics(){
         const gotPics=  await axios(PICURL)
         const cheese = gotPics.data.hits
-        this.setState({gotPics: cheese})
-        }
+        this.setState({
+            gotPics: cheese
+        })
+    }
     
-      componentDidMount(){
+    componentDidMount(){
           this.getPics()
-      }
+    }
 
-      changeHandler(){
-          console.log(this.state.gotPics)
-      }
+    
+    clickHandler(event){
+        const clickedImg = event.target.src
+        this.setState({ favImages:<img src={clickedImg}/>})
+       this.forceUpdate()
+         console.log(this.state.favImages)
+
+       
+        console.log(clickedImg)
+        // return(this.state.favImages)
+    }
+
+   
+     changeHandler(event){
+        const searchTerm = event.target.value
+        const imagesToDisplay= this.state.gotPics.filter((photo)=>{
+            return photo.tags.includes(searchTerm)
+        })
+
+        this.setState({filteredPics:imagesToDisplay})
+    }      
+
 
     render(){
         return(
-            <div>   
+            <div>  
+                <div>{this.state.favImages}</div>
                 <form>
                     <input onChange ={this.changeHandler} type="text"></input>
                     <input type="submit"></input>
                 </form>
-                 <SearchItem fetchedPictures={this.state.gotPics}/>
+                 <SearchItem passClick={this.clickHandler} fetchedPictures={this.state.filteredPics || this.state.gotPics }/>
             </div>
         )
     }

@@ -6,9 +6,10 @@ function SearchItem(props) {
     const photos = props.fetchedPictures.map((photo, key)=>{
         console.log(photo)
         return(
-        <img key={key} src={photo.largeImageURL}></img>
+        <img onClick = {props.passClick} key={key} src={photo.largeImageURL}></img>
         )
     })
+
 
     
         return(
@@ -20,3 +21,5 @@ function SearchItem(props) {
 }
 
 export default SearchItem
+
+

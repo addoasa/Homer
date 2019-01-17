@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 class Moodboard extends Component{
     constructor(){
         super()
+        this.state={
+            favImages:[]
+        }
     }
-
+    
 
     render(){
         return
