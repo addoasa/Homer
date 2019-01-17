@@ -3,7 +3,7 @@ import axios from 'axios';
 import SearchItem from './SearchItem';
 
 
-const PICURL = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&per_page=200&image_type=photo"
+const PICURL = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&per_page=20&image_type=photo"
 const apiKey="11292145-329b7f2b3c7df7ca1ca24508a"
 
 
@@ -15,7 +15,7 @@ class SearchResultsContainer extends Component{
             gotPics: [],
             filteredPics:null ,
             loading:'loading',
-            favImages:''
+            favImages:[]
         }
         this.getPics = this.getPics.bind(this);
         this.changeHandler = this.changeHandler.bind(this);
@@ -37,9 +37,10 @@ class SearchResultsContainer extends Component{
     
     clickHandler(event){
         const clickedImg = event.target.src
-        this.setState({ favImages:<img src={clickedImg}/>})
-       this.forceUpdate()
-         console.log(this.state.favImages)
+        // this.setState({ favImages:<img src={clickedImg}/>})
+        this.state.favImages.push(<img src={clickedImg}/>)
+        this.forceUpdate()
+        console.log(this.state.favImages)
 
        
         console.log(clickedImg)
