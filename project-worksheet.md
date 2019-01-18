@@ -13,9 +13,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Project Description | Complete
-|Day 2| Initial Clickable Model  | Incomplete
-|Day 3| MVP | Incomplete
-|Day | Present | Incomplete
+|Day 2| Initial Clickable Model  | Complete
+|Day 3| MVP | Complete
+|Day 4| Present | Incomplete
 
 
 ## Project Description
@@ -28,7 +28,7 @@ The user can search for an item and decide whether or not they want that item in
 https://res.cloudinary.com/ddz7dotz5/image/upload/v1547534467/IMG_4070.jpg
 https://res.cloudinary.com/ddz7dotz5/image/upload/v1547584611/image_from_ios.jpg
 
-1) In the first wire frame users will type into the search input field which will render furniture items by name.
+1) In the first wireframe users will type into the search input field which will render furniture items by name.
 	Search results will accumulate below the search bar.
 2) In the second Wireframe users can click the icon on a search result. That search resutlt will then populate the top of the 	     webpage forming a moodboard of furniture.
 

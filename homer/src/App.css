@@ -49,6 +49,7 @@ header{
   display:grid;
   height:auto;
   padding-top:8%;
+  overflow: scroll;
 }
 .moodboard-images img{
   width:20%;
