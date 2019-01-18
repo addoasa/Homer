@@ -6,9 +6,6 @@ import SearchItem from './SearchItem';
 
 
 const PICURL = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&page=1&per_page=200&image_type=photo"
-const PICURL2 = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&page=2&per_page=200&image_type=photo"
-const PICURL3 = "https://pixabay.com/api/?key=11292145-329b7f2b3c7df7ca1ca24508a&page=3&per_page=200&image_type=photo"
-const apiKey="11292145-329b7f2b3c7df7ca1ca24508a"
 
 
 class SearchResultsContainer extends Component{
@@ -17,7 +14,7 @@ class SearchResultsContainer extends Component{
         
         this.state={
             gotPics: [],
-            filteredPics:null ,
+            filteredPics:null,
             favImages:[]
         }
         this.getPics = this.getPics.bind(this);
@@ -44,8 +41,6 @@ class SearchResultsContainer extends Component{
         const clickedImgKey = event.target.key
         this.state.favImages.push(<img key ={clickedImgKey} src={clickedImg}/>)
         this.forceUpdate()
-        console.log(this.state.favImages)
-        console.log(clickedImg)
     }
 
    

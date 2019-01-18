@@ -21,7 +21,7 @@ for(let i = 0; i<this.state.gotPics.length;i++){
     }
 }
 
-function change(event){
+function changeHandler(event){
 this.state.gotPics.map((photo,index)=>{
 !this.state.gotPics.tags.includes(event.target.value) ? <img key={key} src={photo.largeImageURL} : <ReactFragment/>
 }
@@ -29,9 +29,11 @@ this.state.gotPics.map((photo,index)=>{
 }       
     
     set the state of got pics to show a picture 
-    gotPics.tags
+    gotPics.tags.includes(event.taget.value) then displayed
+    if not then dont display
 
 
+const apiKey="11292145-329b7f2b3c7df7ca1ca24508a"
 
 
 // [1, 2, 3].includes(2);     // true
