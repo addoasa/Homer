@@ -12,7 +12,6 @@ class App extends Component {
   
 scrollHandler(){
   this.pageTop.scrollIntoView()
-  console.log('hi')
 }
 
 
@@ -22,17 +21,17 @@ scrollHandler(){
       <React.Fragment>
         <header ref={header => {
             this.pageTop = header;
-          }}></header>
-          <main className="main-content">
+          }}>
+        </header>
+        <main className="main-content">
             <div className="sidebar">
                 <img onClick={this.scrollHandler} className="scroll-up" src="Up.png"></img>
-        
             </div>
             <div className="App">
                 <SearchResultsContainer />
             </div>
-          </main>
-          <footer className="basement"></footer>
+        </main>
+        <footer className="basement"></footer>
       </React.Fragment>
     );
   }

@@ -64,14 +64,14 @@ class SearchResultsContainer extends Component{
             <div> 
                 <div className="moodboard-Wrapper">
                     <div ref={this.mood}
-                        className="moodboard-images">{this.state.favImages}</div>
-                </div>
-                    <div className="searchBox">
-                        <input className="input-field" onChange ={this.changeHandler} placeholder="...Search images..."type="text"></input>
+                        className="moodboard-images">{this.state.favImages}
                     </div>
-                        <button   className="clear" onClick={this.clearBoard}>Clear</button>
-                    
-                 <SearchItem passClick={this.clickHandler} fetchedPictures={this.state.filteredPics || this.state.gotPics }/>
+                </div>
+                <div className="searchBox">
+                    <input className="input-field" onChange ={this.changeHandler} placeholder="...Search images..."type="text"></input>
+                </div>
+                <button className="clear" onClick={this.clearBoard}>Clear</button>   
+                <SearchItem passClick={this.clickHandler} fetchedPictures={this.state.filteredPics || this.state.gotPics }/>
             </div>
         )
     }
